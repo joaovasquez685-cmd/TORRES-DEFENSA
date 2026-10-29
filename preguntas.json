@@ -1,0 +1,1523 @@
+{
+  "reward": {
+    "correct": 25,
+    "streakBonus": 5,
+    "maxStreak": 4,
+    "retryFactor": 0.5
+  },
+  "auto": {
+    "firstAfter": 8,
+    "every": 30
+  },
+  "questions": [
+    {
+      "nivel": 1,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver TODOS los animales.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "WHERE"
+      ],
+      "pista": "SELECT es 'muéstrame', * es 'todo' y FROM dice de qué tabla."
+    },
+    {
+      "nivel": 1,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver TODAS las frutas.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas",
+        "COUNT(*)"
+      ],
+      "pista": "Empieza con SELECT, luego la estrella y después FROM."
+    },
+    {
+      "nivel": 1,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "juguetes",
+        "cols": [
+          "juguete",
+          "color"
+        ],
+        "rows": [
+          [
+            "🚗",
+            "azul"
+          ],
+          [
+            "🧸",
+            "café"
+          ],
+          [
+            "🪀",
+            "rojo"
+          ],
+          [
+            "🚂",
+            "azul"
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver TODOS los juguetes.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "juguetes"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "juguetes",
+        "WHERE"
+      ],
+      "pista": "SELECT * FROM y el nombre de la tabla."
+    },
+    {
+      "nivel": 1,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "mascotas",
+        "cols": [
+          "nombre",
+          "animal"
+        ],
+        "rows": [
+          [
+            "Luna",
+            "gato"
+          ],
+          [
+            "Max",
+            "perro"
+          ],
+          [
+            "Nala",
+            "gato"
+          ],
+          [
+            "Rex",
+            "perro"
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver TODAS las mascotas.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "mascotas"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "mascotas",
+        "WHERE"
+      ],
+      "pista": "SELECT * FROM y el nombre de la tabla."
+    },
+    {
+      "nivel": 1,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "dulces",
+        "cols": [
+          "dulce",
+          "sabor"
+        ],
+        "rows": [
+          [
+            "🍬",
+            "fresa"
+          ],
+          [
+            "🍭",
+            "uva"
+          ],
+          [
+            "🍫",
+            "chocolate"
+          ],
+          [
+            "🍡",
+            "fresa"
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver TODOS los dulces.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "dulces"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "dulces",
+        "COUNT(*)"
+      ],
+      "pista": "SELECT * FROM y el nombre de la tabla."
+    },
+    {
+      "nivel": 1,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa la oración para ver todos los animales.",
+      "plantilla": [
+        "SELECT",
+        "_",
+        "FROM",
+        "animales"
+      ],
+      "respuesta": [
+        "*"
+      ],
+      "banco": [
+        "*",
+        "WHERE",
+        "COUNT(*)"
+      ],
+      "pista": "La estrella * significa todo."
+    },
+    {
+      "nivel": 1,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Completa la oración para ver solo la columna color.",
+      "plantilla": [
+        "SELECT",
+        "_",
+        "FROM",
+        "frutas"
+      ],
+      "respuesta": [
+        "color"
+      ],
+      "banco": [
+        "color",
+        "WHERE",
+        "frutas"
+      ],
+      "pista": "Después de SELECT va la columna que quieres ver."
+    },
+    {
+      "nivel": 1,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa: ¿qué palabra dice DE QUÉ tabla?",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "_",
+        "animales"
+      ],
+      "respuesta": [
+        "FROM"
+      ],
+      "banco": [
+        "FROM",
+        "WHERE",
+        "COUNT(*)"
+      ],
+      "pista": "FROM significa 'de'."
+    },
+    {
+      "nivel": 1,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "dulces",
+        "cols": [
+          "dulce",
+          "sabor"
+        ],
+        "rows": [
+          [
+            "🍬",
+            "fresa"
+          ],
+          [
+            "🍭",
+            "uva"
+          ],
+          [
+            "🍫",
+            "chocolate"
+          ],
+          [
+            "🍡",
+            "fresa"
+          ]
+        ]
+      },
+      "pregunta": "Completa la oración para ver solo la columna sabor.",
+      "plantilla": [
+        "SELECT",
+        "_",
+        "FROM",
+        "dulces"
+      ],
+      "respuesta": [
+        "sabor"
+      ],
+      "banco": [
+        "sabor",
+        "WHERE",
+        "FROM"
+      ],
+      "pista": "SELECT columna FROM tabla."
+    },
+    {
+      "nivel": 1,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver solo la columna patas.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "patas",
+        "FROM",
+        "animales"
+      ],
+      "banco": [
+        "SELECT",
+        "patas",
+        "FROM",
+        "animales",
+        "WHERE"
+      ],
+      "pista": "En vez de la estrella, escribe el nombre de la columna."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver solo las frutas ROJAS.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas",
+        "_",
+        "color",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "'rojo'"
+      ],
+      "banco": [
+        "WHERE",
+        "'rojo'",
+        "FROM",
+        "'verde'"
+      ],
+      "pista": "WHERE es 'solo las que cumplan'."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver los animales con 4 patas.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "_",
+        "patas",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "4"
+      ],
+      "banco": [
+        "WHERE",
+        "4",
+        "2",
+        "FROM"
+      ],
+      "pista": "WHERE patas = 4."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver las frutas AMARILLAS.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas",
+        "_",
+        "color",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "'amarillo'"
+      ],
+      "banco": [
+        "WHERE",
+        "'amarillo'",
+        "'rojo'",
+        "FROM"
+      ],
+      "pista": "Las palabras van entre comillas: 'amarillo'."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "juguetes",
+        "cols": [
+          "juguete",
+          "color"
+        ],
+        "rows": [
+          [
+            "🚗",
+            "azul"
+          ],
+          [
+            "🧸",
+            "café"
+          ],
+          [
+            "🪀",
+            "rojo"
+          ],
+          [
+            "🚂",
+            "azul"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver los juguetes AZULES.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "juguetes",
+        "_",
+        "color",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "'azul'"
+      ],
+      "banco": [
+        "WHERE",
+        "'azul'",
+        "'rojo'",
+        "FROM"
+      ],
+      "pista": "WHERE color = 'azul'."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "mascotas",
+        "cols": [
+          "nombre",
+          "animal"
+        ],
+        "rows": [
+          [
+            "Luna",
+            "gato"
+          ],
+          [
+            "Max",
+            "perro"
+          ],
+          [
+            "Nala",
+            "gato"
+          ],
+          [
+            "Rex",
+            "perro"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver solo los GATOS.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "mascotas",
+        "_",
+        "animal",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "'gato'"
+      ],
+      "banco": [
+        "WHERE",
+        "'gato'",
+        "'perro'",
+        "FROM"
+      ],
+      "pista": "WHERE filtra: solo las filas que cumplen."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Completa: ¿qué palabra FILTRA (elige solo algunos)?",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas",
+        "_",
+        "color",
+        "=",
+        "'rojo'"
+      ],
+      "respuesta": [
+        "WHERE"
+      ],
+      "banco": [
+        "WHERE",
+        "FROM",
+        "SELECT"
+      ],
+      "pista": "Piensa en 'dónde': ¿dónde el color es rojo?"
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver los animales con 2 patas.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "_",
+        "patas",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "2"
+      ],
+      "banco": [
+        "WHERE",
+        "2",
+        "4",
+        "FROM"
+      ],
+      "pista": "WHERE patas = 2."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "dulces",
+        "cols": [
+          "dulce",
+          "sabor"
+        ],
+        "rows": [
+          [
+            "🍬",
+            "fresa"
+          ],
+          [
+            "🍭",
+            "uva"
+          ],
+          [
+            "🍫",
+            "chocolate"
+          ],
+          [
+            "🍡",
+            "fresa"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver los dulces de FRESA.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "dulces",
+        "_",
+        "sabor",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "'fresa'"
+      ],
+      "banco": [
+        "WHERE",
+        "'fresa'",
+        "'uva'",
+        "FROM"
+      ],
+      "pista": "WHERE sabor = 'fresa'."
+    },
+    {
+      "nivel": 2,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ver las frutas VERDES.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas",
+        "_",
+        "color",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "WHERE",
+        "'verde'"
+      ],
+      "banco": [
+        "WHERE",
+        "'verde'",
+        "'rojo'",
+        "FROM"
+      ],
+      "pista": "WHERE color = 'verde'."
+    },
+    {
+      "nivel": 2,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ver los animales con 0 patas.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "WHERE",
+        "patas",
+        "=",
+        "0"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "WHERE",
+        "patas",
+        "=",
+        "0",
+        "4",
+        "FROM"
+      ],
+      "pista": "SELECT * FROM animales WHERE patas = 0."
+    },
+    {
+      "nivel": 3,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para CONTAR cuántos animales hay.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "animales"
+      ],
+      "banco": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "animales",
+        "*",
+        "WHERE"
+      ],
+      "pista": "COUNT cuenta las filas, como contar con los dedos."
+    },
+    {
+      "nivel": 3,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para CONTAR cuántas frutas hay.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "frutas"
+      ],
+      "banco": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "frutas",
+        "*",
+        "WHERE"
+      ],
+      "pista": "COUNT(*) cuenta todas las filas."
+    },
+    {
+      "nivel": 3,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa: ¿cuántos animales tienen 4 patas?",
+      "plantilla": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "animales",
+        "WHERE",
+        "patas",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "4"
+      ],
+      "banco": [
+        "4",
+        "2",
+        "0"
+      ],
+      "pista": "Mira la tabla: ¿cuántas patas buscamos?"
+    },
+    {
+      "nivel": 3,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa para ORDENAR los animales por patas.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "_",
+        "patas"
+      ],
+      "respuesta": [
+        "ORDER BY"
+      ],
+      "banco": [
+        "ORDER BY",
+        "WHERE",
+        "COUNT(*)"
+      ],
+      "pista": "ORDER BY significa 'ordenar por'."
+    },
+    {
+      "nivel": 3,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "mascotas",
+        "cols": [
+          "nombre",
+          "animal"
+        ],
+        "rows": [
+          [
+            "Luna",
+            "gato"
+          ],
+          [
+            "Max",
+            "perro"
+          ],
+          [
+            "Nala",
+            "gato"
+          ],
+          [
+            "Rex",
+            "perro"
+          ]
+        ]
+      },
+      "pregunta": "Completa: ¿cuántos gatos hay?",
+      "plantilla": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "mascotas",
+        "WHERE",
+        "animal",
+        "=",
+        "_"
+      ],
+      "respuesta": [
+        "'gato'"
+      ],
+      "banco": [
+        "'gato'",
+        "'perro'",
+        "'Luna'"
+      ],
+      "pista": "Buscamos los de animal = 'gato'."
+    },
+    {
+      "nivel": 3,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para ORDENAR los animales por patas.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "ORDER BY",
+        "patas"
+      ],
+      "banco": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "ORDER BY",
+        "patas",
+        "WHERE"
+      ],
+      "pista": "ORDER BY va al final."
+    },
+    {
+      "nivel": 3,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "dulces",
+        "cols": [
+          "dulce",
+          "sabor"
+        ],
+        "rows": [
+          [
+            "🍬",
+            "fresa"
+          ],
+          [
+            "🍭",
+            "uva"
+          ],
+          [
+            "🍫",
+            "chocolate"
+          ],
+          [
+            "🍡",
+            "fresa"
+          ]
+        ]
+      },
+      "pregunta": "Completa para CONTAR los dulces de fresa.",
+      "plantilla": [
+        "SELECT",
+        "_",
+        "FROM",
+        "dulces",
+        "WHERE",
+        "sabor",
+        "=",
+        "'fresa'"
+      ],
+      "respuesta": [
+        "COUNT(*)"
+      ],
+      "banco": [
+        "COUNT(*)",
+        "*",
+        "ORDER BY"
+      ],
+      "pista": "Count = contar."
+    },
+    {
+      "nivel": 3,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "frutas",
+        "cols": [
+          "fruta",
+          "color"
+        ],
+        "rows": [
+          [
+            "🍎",
+            "rojo"
+          ],
+          [
+            "🍌",
+            "amarillo"
+          ],
+          [
+            "🍓",
+            "rojo"
+          ],
+          [
+            "🍐",
+            "verde"
+          ]
+        ]
+      },
+      "pregunta": "Completa para ORDENAR las frutas por color.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "frutas",
+        "_",
+        "color"
+      ],
+      "respuesta": [
+        "ORDER BY"
+      ],
+      "banco": [
+        "ORDER BY",
+        "WHERE",
+        "FROM"
+      ],
+      "pista": "En inglés 'order' significa ordenar."
+    },
+    {
+      "nivel": 3,
+      "tipo": "completar",
+      "tabla": {
+        "nombre": "animales",
+        "cols": [
+          "animal",
+          "patas"
+        ],
+        "rows": [
+          [
+            "🐶",
+            4
+          ],
+          [
+            "🐱",
+            4
+          ],
+          [
+            "🐦",
+            2
+          ],
+          [
+            "🐟",
+            0
+          ]
+        ]
+      },
+      "pregunta": "Completa para ordenar de MAYOR a MENOR patas.",
+      "plantilla": [
+        "SELECT",
+        "*",
+        "FROM",
+        "animales",
+        "ORDER BY",
+        "patas",
+        "_"
+      ],
+      "respuesta": [
+        "DESC"
+      ],
+      "banco": [
+        "DESC",
+        "ASC",
+        "WHERE"
+      ],
+      "pista": "DESC es de mayor a menor, como bajar escaleras."
+    },
+    {
+      "nivel": 3,
+      "tipo": "crear",
+      "tabla": {
+        "nombre": "dulces",
+        "cols": [
+          "dulce",
+          "sabor"
+        ],
+        "rows": [
+          [
+            "🍬",
+            "fresa"
+          ],
+          [
+            "🍭",
+            "uva"
+          ],
+          [
+            "🍫",
+            "chocolate"
+          ],
+          [
+            "🍡",
+            "fresa"
+          ]
+        ]
+      },
+      "pregunta": "Arma la oración para CONTAR cuántos dulces hay.",
+      "plantilla": [
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      "respuesta": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "dulces"
+      ],
+      "banco": [
+        "SELECT",
+        "COUNT(*)",
+        "FROM",
+        "dulces",
+        "*",
+        "WHERE"
+      ],
+      "pista": "SELECT COUNT(*) FROM y la tabla."
+    }
+  ],
+  "glosario": {
+    "SELECT": "muéstrame",
+    "*": "todo",
+    "FROM": "de la tabla",
+    "WHERE": "solo si...",
+    "=": "es igual a",
+    "COUNT(*)": "cuántos hay",
+    "ORDER BY": "ordenar por",
+    "DESC": "de mayor a menor",
+    "ASC": "de menor a mayor"
+  }
+}

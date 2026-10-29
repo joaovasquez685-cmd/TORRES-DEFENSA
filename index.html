@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tower Defense · Patrones de Diseño</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header id="hud">
+    <span>Nivel<b id="hLevel">1</b></span><span>Oro<b id="hGold">0</b></span>
+    <span>Base<b id="hLife">0</b></span><span>Puntaje<b id="hScore">0</b></span>
+  </header>
+  <div id="stage">
+    <canvas id="cv" width="800" height="480"></canvas>
+    <div id="overlay">
+      <h2 id="oTitle"></h2><p id="oText"></p>
+      <input id="oName" maxlength="20" placeholder="Tu nombre" hidden>
+      <div id="oBtns"></div><ol id="oRank"></ol>
+    </div>
+    <div id="quizBox" hidden>
+      <div id="qTable"></div><h2 id="qText"></h2>
+      <div id="qGuide"><span id="qMascot">🦉</span><p id="qHint"></p></div>
+      <div id="qSentence"></div><div id="qBank"></div>
+      <button id="qHintBtn"></button>
+      <p id="qMsg"></p><button id="qNext" hidden></button>
+    </div>
+  </div>
+  <section id="panel">
+    <div id="towers"></div><div id="abilities"></div>
+    <button id="btnStart" hidden>Iniciar oleada</button>
+    <p id="msg"></p>
+  </section>
+  <section id="board"><h2>Ranking en vivo</h2><ol id="liveRank"></ol></section>
+</main>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
